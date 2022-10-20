@@ -25,10 +25,13 @@ Here we have some usefull commands:
 ````
 # list all installed distros
 wsl -l
+
 # start distro
 wsl -d <Distribution Name>
+
 # shutdown distro
 wsl -t <Distribution Name>
+
 # shutdown all distros
 wsl --shutdown
 ````
@@ -81,8 +84,10 @@ wsl -d <DistroName> genie -s
 ````
 # export Debian (DistroName) into a .tar file
 wsl --export Debian debian.tar
+
 # import Debian (Distroname), location where it will be and backup location
 wsl --import Debian D:\WSL\Debian D:\WSL\Debian\debian_post_git.tar
+
 # eliminate my Debian Wsl instance
 wsl --unregister Debian
 ````
