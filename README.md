@@ -5,7 +5,7 @@
 ## Project structure
 ```
 wsl2-setup 
-└── Scripts
+└── scripts
      └── debian_backup.ps1
      └── ssh_port_forwarding_debian.ps1
 ```
