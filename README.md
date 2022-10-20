@@ -76,10 +76,17 @@ wsl -d <DistroName> genie -s
 -File D:\WSL\Scripts\ssh_port_forwarding_debian.ps1 -ExecutionPolicy Bypass -WindowStyle Hidden -noProfile -noInteractive
 ````
 
-- If we also start our prefer distro automatically, with just login in our computer we can have `ssh` access. In order to this, we need `Windows Terminal`. To activate this, we go to Settings --> Startup --> Default Profile (here we select our Linux distro) --> Launch on machine startup.
+- How do we connect to our `wsl` distro? First we need to get our `ipv4` address, so we are gonna open a `cmd` or `powershell` and we are gonna use `ifconfig` in order to get it. Then we can just connect to our `wsl` instance like this:
+````
+# ssh (windows hostname)@(ipv4 address) -p 2222 
+ssh saul@192.168.1.139 -p 2222
+````
+- If everything is ok, it will ask for our `windows login` password.
+
+- If we also start our prefer distro automatically with just login into our computer we can have `ssh` access. In order to this, we need `Windows Terminal`. To activate this, we go to Settings --> Startup --> Default Profile (here we select our Linux distro) --> Launch on machine startup.
 
 ## Fifth task: backup plan
-- Finally I have included a backup script `debian_backup.ps1`. This script I also recommend you to add it to `Task Scheduler` and you can execute it once a week for example. This way you will always have at least a copy of all your projects.
+- Finally I have included a backup script `debian_backup.ps1`. This script I also recommend you to add it to `Task Scheduler` and you can execute it once a week for example. This way you will always have at least a copy of all your projects. If you wanna use it, you will have to edit the `path` of both, your `wsl distro` and where you wanna the backup to be stored.
 - Here are some useful backup commands:
 ````
 # export Debian (DistroName) into a .tar file
