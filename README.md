@@ -37,10 +37,10 @@ wsl --shutdown
 ````
 
 ## Second step: install Windows terminal (optional)
-- If you are going to install more than one distro, I recommend to install `Windows terminal`. It supports as many command lines as you would like to install and it is quite customizable.
+- If you are going to install more than one distro, I recommend you to install `Windows terminal`. It supports as many command lines as you would like to install and it is quite customizable.
 
 ## Third task: enable systemd
-- If you are using `Windows 11`, there IS already an official way to enable [it](https://devblogs.microsoft.com/commandline/systemd-support-is-now-available-in-wsl/). 
+- If you are using `Windows 11`, there is already an official way to enable [it](https://devblogs.microsoft.com/commandline/systemd-support-is-now-available-in-wsl/). 
 - If you are still using `Windows 10` like myself, we are gonna use the following [instructions](https://gist.github.com/djfdyuruiry/6720faa3f9fc59bfdf6284ee1f41f950).
 These instructions are the following:
 - Inside our `wsl` distro:
