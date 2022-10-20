@@ -41,8 +41,7 @@ wsl --shutdown
 
 ## Third task: enable systemd
 - If you are using `Windows 11`, there is already an official way to enable [it](https://devblogs.microsoft.com/commandline/systemd-support-is-now-available-in-wsl/). 
-- If you are still using `Windows 10` like myself, we are gonna use the following [instructions](https://gist.github.com/djfdyuruiry/6720faa3f9fc59bfdf6284ee1f41f950).
-These instructions are the following:
+- If you are still using `Windows 10` like myself, we are gonna use these [instructions](https://gist.github.com/djfdyuruiry/6720faa3f9fc59bfdf6284ee1f41f950). Basically we have to:
 - Inside our `wsl` distro:
 ````
 cd /tmp
