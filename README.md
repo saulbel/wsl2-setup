@@ -39,7 +39,7 @@ wsl --shutdown
 ## Second step: install Windows terminal (optional)
 - If you are going to install more than one distro, I recommend you to install `Windows terminal`. It supports as many command lines as you would like to install and it is quite customizable.
 
-## Third task: enable systemd
+## Third step: enable systemd
 - If you are using `Windows 11`, there is already an official way to enable [it](https://devblogs.microsoft.com/commandline/systemd-support-is-now-available-in-wsl/). 
 - If you are still using `Windows 10` like myself, we are gonna use these [instructions](https://gist.github.com/djfdyuruiry/6720faa3f9fc59bfdf6284ee1f41f950). Basically we have to:
 - Inside our `wsl` distro:
@@ -67,7 +67,7 @@ wsl -d <DistroName> genie -s
 - So each time that we launch our distro, it will start with `systemd` enabled.
 
 
-## Fourth task: enable ssh
+## Fourth step: enable ssh
 - Let's say that we want to ssh into our `wsl` distro and have all our work/projects there. Each time we reset our pc, `wsl` will have a different IP. So in order to bypass this, we are gonna use `ssh_port_forwarding_debian.ps1`. 
 
 - I recommend you to add it to `Task Scheduler` so each time you boot up your pc, it will be executed. These are the arguments that I use:
@@ -84,7 +84,7 @@ ssh saul@192.168.1.139 -p 2222
 
 - If we also start our prefer distro automatically with just login into our computer we can have `ssh` access. In order to this, we need `Windows Terminal`. To activate this, we go to Settings --> Startup --> Default Profile (here we select our Linux distro) --> Launch on machine startup.
 
-## Fifth task: backup plan
+## Fifth step: backup plan
 - Finally I have included a backup script `debian_backup.ps1`. This script I also recommend you to add it to `Task Scheduler` and you can execute it once a week for example. This way you will always have at least a copy of all your projects. If you wanna use it, you will have to edit the `path` of both, your `wsl distro` and where you wanna the backup to be stored.
 - Here are some useful backup commands:
 ````
